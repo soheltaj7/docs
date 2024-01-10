@@ -143,6 +143,7 @@ There are some important limitations and requirements to consider when using the
 2. **Saved queries**: Only saved queries can be used with the "Query a Query" feature.
 3. **Archived queries**: Archived queries cannot be queried.
 4. **Dune SQL**: Only queries written in Dune SQL can be queried.
+5. **Mixed cases on parameters:** If you pass on parameters when querying a query, the parameter key and its values should be lower cased, as DuneSQL is case insensitive. Querying a query with parameters that has its values taken from another query's results is not permitted.
 
 !!! Tip
     Querying private queries is a [premium feature](https://dune.com/pricing) only. You can't query private queries with a free or plus account. 
